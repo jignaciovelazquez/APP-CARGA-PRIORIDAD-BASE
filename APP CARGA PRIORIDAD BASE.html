@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+
+  </head>
+  <header style="background-color: rgb(22,132,231); width:100%; height:60px">
+      <div>
+        <h1 style="color:rgb(255,255,255); padding:20px"> SOLICITUD DE DISEÑOS PRIORIDAD </h1>
+      </div>
+  </header>
+  <body>
+    <section style="float:left; background-color: rgb(211, 211, 211); width: 100%">
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons.css">
+    <section style="float:left; background-color: rgb(211, 211, 211); width: 50%">
+      <div id="DIV1" style="font-size: 15px">
+        <br>
+        <label style="margin-right:10px; font-weight:bold; font-size: 20px">Despacho: </label>
+        <select type="text" id="DISPATCHER" style="width:130px; height:35px; font-size: 15px" >
+          <option value="0" selected></option>
+          <option value="ALEJANDRO">ALEJANDRO</option>
+          <option value="RENATO">RENATO</option>
+          <option value="RAFAEL">RAFAEL</option>
+          <option value="LUCIANO">LUCIANO</option>
+          <option value="KEVIN">KEVIN</option>
+          <option value="EDUARDO">EDUARDO</option>
+          <option value="ALEJANDRA">ALEJANDRA</option>
+          <option value="GONZALO">GONZALO</option>
+          <option value="NESTOR">NESTOR</option>
+          <option value="LUCAS">LUCAS</option>          
+          <option value="OMAR">OMAR</option>          
+        </select>
+        <br>
+        <br>
+        <label style="margin-right:10px; font-weight:bold; font-size: 20px">ID: </label>
+        <input type="text" id="ID" name="nodo" style="width:100px; height:35px">
+        <br>
+        <br>
+        <label style="margin-right:10px; font-weight:bold; font-size: 20px">Dirección</label>
+        <input type="text" id="DIRECCION" name="direccion" style="width:350px; height:35px">
+        <br>
+        <br>
+        <label style="margin-right:10px; font-weight:bold; font-size: 20px">Nodo: </label>
+        <input type="text" id="NODO" name="nodo" style="width:100px; height:35px">
+        <br>
+        <br>
+        <label style="margin-right:10px; font-weight:bold; font-size: 20px">Tipo de Diseño: </label>
+        <select type="text" id="DISENO" style="width:150px; height: 35px; font-size: 15px" >
+          <option value="0" selected></option>
+          <option value="ONLINE">ONLINE</option>
+          <option value="PRIORIDAD">PRIORIDAD</option>
+        </select>
+        <br>
+        <br>
+        <label style="margin-right:10px; font-weight:bold; font-size: 20px">Tipo de Gestión: </label>
+        <select type="text" id="GESTION" style="width:200px; height: 35px; font-size: 15px" >
+          <option value="0" selected></option>
+          <option value="ARMADO">ARMADO</option>
+          <option value="NORMALIZADO">NORMALIZADO</option>
+          <option value="RECONVERSION">RECONVERSION</option>
+        </select>
+        <br>
+        <br>
+        <label style="margin-right:10px; font-weight:bold; font-size: 20px">Contratista: </label>
+        <select type="text" id="CONTRATISTA" style="width:220px; height: 35px; font-size: 15px" >
+          <option value="0" selected></option>
+          <option value="DLL">DLL</option>
+          <option value="SICSA">SICSA</option>
+          <option value="PEBCOM">PEBCOM</option>
+          <option value="SUR RED">SUR RED</option>
+          <option value="RD CONSTRUCCIONES">RD CONSTRUCCIONES</option>
+          <option value="SURREBE">SURREBE</option>
+          <option value="EPICA">EPICA</option>
+          <option value="Comercial">Comercial</option>
+          <option value="Personal Propio">Personal Propio</option>
+          <option value="Otro">Otro</option>
+        </select>
+        <br>
+        <br>
+        <label style="margin-right:10px; font-weight:bold; font-size: 20px">Tecnico: </label>
+        <input type="text" id="TECNICO" name="direccion" style="width:350p; height:35px">
+        <br>
+        <br>
+        <label style="margin-right:10px; font-weight:bold; font-size: 20px">Fecha y Hora de ejecución: </label>
+        <input type="text" id="FECHA" name="nodo" style="width:200px; height:35px">
+        <br>
+        <br>
+        <label style="margin-right:10px; font-weight:bold; font-size: 20px">Observación: </label>
+        <textarea id="OBS" style="height: 80px; width:450px" placeholder="Agregue la Observacion que crea necesaria"></textarea>
+      </div>
+      <br>
+      <button class="green" id="CARGAR" style="margin-left:10px; width:100px; height: 35px; font-size: 15px">CARGAR</button>
+      <button class="create" id="BORRAR" style="margin-left:30px; width:100px; height: 35px; font-size: 15px">BORRAR</button>
+      <br>
+      <br>
+
+      
+    </section>
+
+    <section style="float:left; background-color: rgb(211, 211, 211); width: 50%">
+ 
+      <p style="margin-right:10px; font-weight:bold; font-size: 16px; color: rgb(255, 0, 0)"><label style="font-size: 20px">Verificar:</label><br><br>
+        -	Que la gestión se encuentre en Cierre de Relevamiento en CRM.<br>
+        -	Que la orden se encuentre completada en ETA.<br>
+        -	Que se encuentren las carpetas e imágenes obligatorias en el DRIVE de EC.<br>
+        </p>
+      <textarea id="PARRAFO" style="width:400px; height: 400px; font-size: 15px" ></textarea>
+      <br>
+      <button class="green" id="COPIAR" style="width:70px; height: 25px; font-size: 13px">COPIAR</button>
+
+    </section>
+
+    </section>
+
+    <footer style="float:none; background-color: rgb(22,132,231)">
+        <br>
+      <h3 style="color:rgb(255,255,255); text-align: center"> Desarrollado por Gestion de Procesos y Servicios S.A. al servicio de TELECENTRO </h3>
+      <h3 style="color:rgb(255,255,255); text-align: center"> Google App: CARGA DE GESTIONES PRIORIDAD V0.2 </h3>
+      <h4 style="color:rgb(255,255,255); text-align: center">By Ing. Ignacio Velazquez</h4>
+      </footer>
+
+
+   
+  
+  <script>
+
+
+document.getElementById("CARGAR").addEventListener('click', () => {
+
+        let FORMATO = "";
+        document.getElementById("PARRAFO").value = "";
+        if (document.getElementById("DISPATCHER").value == ""){
+          window.alert("Debes ingresar un Dispatcher");
+          return
+        }
+        if (document.getElementById("ID").value == ""){
+          window.alert("Debes ingresar un numero de ID");
+          return
+        }
+        if (document.getElementById("NODO").value == ""){
+          window.alert("Debes ingresar un NODO");
+          return
+        }
+        if (document.getElementById("DIRECCION").value == ""){
+          window.alert("Debes ingresar una Direccion");
+          return
+        }
+        if (document.getElementById("DISENO").value == ""){
+          window.alert("Debes ingresar el Tipo de Diseño");
+          return
+        }
+        if (document.getElementById("GESTION").value == ""){
+          window.alert("Debes ingresar el Tipo de Gestion");
+          return
+        }
+        if (document.getElementById("CONTRATISTA").value == ""){
+          window.alert("Debes ingresar la Contratista");
+          return
+        }
+        if (document.getElementById("TECNICO").value == ""){
+          window.alert("Debes ingresar el Tecnico");
+          return
+        }
+        if (document.getElementById("FECHA").value == ""){
+          window.alert("Debes ingresar la Fecha y Hora de ejecución");
+          return
+        }
+
+        FORMATO = `Diseño: ${document.getElementById("DISENO").value}\nTipo de Gestión: ${document.getElementById("GESTION").value}\nContratista: ${document.getElementById("CONTRATISTA").value}\nTecnico: ${document.getElementById("TECNICO").value.toUpperCase()}\nID: ${document.getElementById("ID").value}\nNodo: ${document.getElementById("NODO").value.toUpperCase()}\nDirección: ${document.getElementById("DIRECCION").value.toUpperCase()}\nFecha y Hora de ejecución: ${document.getElementById("FECHA").value.toUpperCase()}\nComentarios: ${document.getElementById("OBS").value}\n`;
+
+        
+
+        DISPATCHER = document.getElementById("DISPATCHER").value;
+        ID = document.getElementById("ID").value;
+        NODO = document.getElementById("NODO").value.toUpperCase();
+        DIRECCION = document.getElementById("DIRECCION").value.toUpperCase();
+        DISENO = document.getElementById("DISENO").value;
+        GESTION = document.getElementById("GESTION").value;
+        CONTRATISTA = document.getElementById("CONTRATISTA").value;
+        TECNICO = document.getElementById("TECNICO").value.toUpperCase();
+        FECHA = document.getElementById("FECHA").value.toUpperCase();
+        OBS = document.getElementById("OBS").value;
+
+        HORA = new Date().toLocaleString();
+
+        google.script.run.withSuccessHandler(function (output) {
+                idduplicado = output[0];
+                filaduplicado = output[1];
+                if (idduplicado == 0){
+                    document.getElementById("PARRAFO").value = FORMATO;
+                    google.script.run.Escribir(HORA,DISPATCHER,ID,NODO,DIRECCION,DISENO,GESTION,CONTRATISTA,TECNICO,FECHA,OBS);
+                    setTimeout(function(){ 
+                      window.alert("Gestión cargada correctamente");
+                      }, 2000);
+                    return
+                }
+                else{
+                  document.getElementById("PARRAFO").value = FORMATO;
+                  window.alert(`El ID: ${ID} ya se encuentra cargado en la fila: ${filaduplicado} de la Planilla de Carga de Prioridades, Favor Verificar`);
+                    return
+                }
+            }).buscarID(ID);
+        
+
+      })
+
+      document.getElementById("COPIAR").addEventListener('click', () => {
+
+        var codigoACopiar = document.getElementById('PARRAFO');
+        codigoACopiar.select();
+        codigoACopiar.setSelectionRange(0,99999);
+
+        document.execCommand('copy');
+      })
+
+
+
+      document.getElementById("BORRAR").addEventListener('click', ()=> {
+        limpiar();
+      })
+
+
+
+      function limpiar(){
+        document.getElementById("ID").value = "";
+        document.getElementById("NODO").value = "";
+        document.getElementById("DIRECCION").value = "";
+        document.getElementById("DISENO").value = 0;
+        document.getElementById("GESTION").value = 0;
+        document.getElementById("CONTRATISTA").value = 0;
+        document.getElementById("TECNICO").value = "";
+        document.getElementById("FECHA").value = "";
+        document.getElementById("OBS").value = "";
+        document.getElementById("PARRAFO").value = "";
+        }
+
+  </script>
+
+  </body>
+  </html>
